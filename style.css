@@ -11,6 +11,16 @@ body {
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
+    vertical-align: middle;
+    display:table-cell;
+}
+
+
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+    /*margin-left: : 15%;
+    margin-right: 0*/
 }
 
 
