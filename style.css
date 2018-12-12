@@ -351,6 +351,7 @@ li> a {
      #header {
          height: 50vh;
      }
+     
      div.socicon {
          width: 3em;
      }
@@ -358,7 +359,8 @@ li> a {
      svg.cover {
          height: 2em;
      }
-    .vertical-center{
+
+    .center{
          top: 40%;
          transform: translate(0%, -30%);
          -webkit-transform: translate(0%, -30%);
