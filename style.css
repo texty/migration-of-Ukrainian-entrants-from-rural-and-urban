@@ -54,7 +54,7 @@ div.socicon {
 }
 
 div.logo {
-  max-width: 20%;
+  max-width: 18%;
   padding-top: 0.8em;
 }
 
@@ -107,22 +107,6 @@ div.logo {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 5px;
-}
-
-.text1 {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 5px;
-}
-
-.text2 {
-    font-size: 1em;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 5px;
-    color: #5D646F;    
 }
 
 .speech {
@@ -360,3 +344,29 @@ li> a {
 .support-site:link,
 .support-site:visited {
   color: #FAA61A; }
+
+ /* for mobile*/
+
+ @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 300px) and (orientation: portrait) {
+     #header {
+         height: 50vh;
+     }
+     div.socicon {
+         width: 3em;
+     }
+
+     svg.cover {
+         height: 2em;
+     }
+    .vertical-center{
+         top: 40%;
+         transform: translate(0%, -30%);
+         -webkit-transform: translate(0%, -30%);
+     }
+ }
+
+
+ 
+
+
+
