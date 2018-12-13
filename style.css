@@ -3,7 +3,6 @@ html *
   font-family: "Open Sans";
 }
 
-
 body {
     font-family: "Open Sans";
     font-size: 100%;
@@ -15,10 +14,34 @@ body {
     display:table-cell;
 }
 
+.row {
+    margin-right: 0 ! important;
+    margin-left: 0 ! important;
+}
+
+.container_fluid {
+  margin-right: 0 ! important;
+  margin-left: 0 ! important;
+  padding-right: 0 ! important;
+  padding-left: 0 ! important;
+}
+
+
+/*.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}*/
+
 
 .box {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 #header  {
@@ -39,10 +62,9 @@ div.social-icons {
 
 div.socicon {
     float: right;
-    width: 3em;
+    width: 2em;
     margin-right: 1em;
-    text-align: right;
-    
+    text-align: right;   
 }
 
 div.logo {
@@ -98,13 +120,14 @@ div.logo {
 .text {
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .speech {
   margin-bottom: 2%;\
   margin-bottom: 5px;
-  color: #ff6c03;
+  color: #ff7b1d;
   font-size: 1.2em;
   text-align: center;
 }
@@ -141,7 +164,7 @@ p {
 
 
 a.mylink {
-    color: #ff6c03;
+    color: #ff7b1d;
     border-bottom: 0px;
 }
 
@@ -161,7 +184,7 @@ a.greylinkmin {
 
 a.notelink {
     font-size: 1em;
-    color: #ff6c03;
+    color: #ff7b1d;
     border-bottom: 0px;
     border-bottom: 0.8px dashed;
     text-decoration: none;    
@@ -174,8 +197,13 @@ img {
 }
 
 img.smaller {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
+}
+
+img.logo {
+  width: 120%;
+  height: 100%;
 }
 
 .comment {
@@ -187,14 +215,14 @@ img.smaller {
 .my-comment1 {
     font-size: 0.8em;
     font-weight: 300;
-    color: #ff6c03;
+    color: #ff7b1d;
     padding-top: 1%;
 }
 
 .my-comment2 {
     font-size: 0.8em;
     font-weight: 300;
-    color: #ff6c03;
+    color: #ff7b1d;
     padding-top: 1%;
 }
 
@@ -243,7 +271,7 @@ th.caption {
 
 td.common {
     font-weight: 800;
-    color: #ff6c03;
+    color: #ff7b1d;
     font-size: 1.5em; 
 }
 
@@ -256,7 +284,7 @@ td.common2 {
 
 td.highlight{
   color: #FFFFFF;
-  background-color: #cd853f;
+  background-color: #ff7b1d;
   font-size: 1.5em;
   font-weight: 800;
 }
@@ -348,36 +376,42 @@ li> a {
 
 /*sm and md*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 300px) and (orientation: portrait) {
-  .text {
-    margin-right: 1%;
-    margin-left: 1%;
-  }
-
-  img.smaller {/*
-    transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%);*/
-    width: 100%;
-    height: 100%;
+  img.smaller {
+    width: 90%;
+    height: 90%;
   }
 }
 
 /*sm*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 300px) and (orientation: portrait) {
+  .text {
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 80%;
+  }
+
   table.table {
     font-size: 0.6em;
   }
 
   .intro {
-    font-size: 90%;
+    font-size: 85%;
   }
 
   div.socicon {
-    width: 1.6em;
+    width: 1em;
+    margin-right: 0.5em;
   }
 
   div.logo {
     height: 60%;
     max-width: 100%;
+  }
+
+  img.logo {
+    width: 260%;
+    height: 250%;
   }
 
   .credits{
@@ -399,34 +433,137 @@ li> a {
 
   .myh1 {
     font-size: 1.2em;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+  }
+}
+
+/*sm for landscape*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 300px) and (orientation: landscape) {
+  .myh1 {
+    font-size: 1.5em;
+  }
+
+  .credits {
+    top: 55%;
+  }
+
+  img.logo {
+    width: 265%;
+    height: 70%;
+  }
+
+  div.socicon {
+    width: 1.8em;
+    margin-top: 0.3em;
+  }
+
+  .intro {
+    font-size: 1em;
   }
 }
 
 /*md*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
+  .text {
+      margin-left: 1%;
+      margin-right: 1%;
+      font-size: 125%;
+  }
+
   table.table {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .intro {
-    font-size: 105%;
+    font-size: 120%;
   }
 
   div.socicon {
-    width: 3.3em;
+    width: 2em;
+    margin-top: 2%;
   }
 
   div.logo {
     max-width: 40%;
   }
 
+  img.logo {
+      width: 275%;
+      height: 85%;
+  }
+
   #header {
     height: 100vh;
   }
 
+  .center {
+    top: 65%;
+  }
+
+  .credits {
+    top: 75%;
+    font-size: 125%;
+  }
+
   .myh1 {
+    font-size: 2.8em;
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
   }
 }
 
+/*for md landscape*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+  img.logo {
+    width: 200%;
+    height: 100%;
+  }
+}
+
+/*extra sm*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 568px) and (min-device-width: 300px) and (orientation: portrait) {
+  .credits {
+    top: 28%;
+    font-size: 0.6em;
+  }
+
+  .center {
+    top: 25%;
+  }
+
+  .myh1 {
+    font-size: 1.1em;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+  }
+
+  div.socicon {
+    width: 0.7em;
+  }
+
+  img.logo {
+    width: 400%;
+    height: 300%;
+  }
+
+  .intro {
+      font-size: 75%;
+  }
+}
+
+/*extra sm landscape*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 568px) and (min-device-width: 300px) and (orientation: landscape) {
+  .credits {
+    top: 50%;
+  }
+
+  .center {
+    top: 35%;
+  }
+
+  .intro {
+    font-size: 0.8em;
+  }
+}
