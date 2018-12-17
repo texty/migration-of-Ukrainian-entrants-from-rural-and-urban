@@ -5,6 +5,8 @@
     	<title>entrants</title>
 
     	<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    	<!-- popper.js -->
+    	<script source="popper.js"></script>
     	<!-- <script type="text/javascript" src="lib/jquery-3.3.1.js"></script> -->
 
     	<link href="style.css" rel = stylesheet>
@@ -135,6 +137,10 @@
 
             <div class="box justify-content-center">
                 <img src="img/zno_diff.png" class = "smaller">
+            </div>
+
+            <div class="box justify-content-center">
+                <img src="img/zno_diff_mobile.png" class = "mobile">
             </div> 
 
             <div class="container-fluid">
@@ -274,11 +280,21 @@
 
                 <!--  note about Kyiv region   -->
 
+			<!-- <div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-8 offset-md-2">
+				    	<div class="text">
+				            <p>Погляньмо детальніше як обирали місце навчання абітурієнти з сіл та міст <span class='comment no3'>у кожній з областей*</span></p>
+				        </div>
+				    </div>
+			    </div>
+			</div> -->
+
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-12 col-md-8 offset-md-2">
 				    	<div class="text">
-				            <p>Погляньмо детальніше як обирали місце навчання абітурієнтів з сіл та міст <span class='comment no3'>у кожній з областей*</span></p>
+				            <p>Погляньмо детальніше як обирали місце навчання абітурієнти з сіл та міст</p><button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="показники для Київської області наведені без урахування Києва">у кожній з областей</button>
 				        </div>
 				    </div>
 			    </div>
@@ -295,7 +311,7 @@
 							      		</div>
 							      			<div id="collapse3" class="panel-collapse collapse">
 							      				<div class="text">
-							      					<p>Мапи показують куди їхали вступники з міст (<span style="color: #ff7b1d;">помаранчеві мапи</span>) та сіл (<span style="color: #1da1ff;">сині мапи</span>) у відсоткових значеннях. Чим темніший колір області - тим більше туди поїхало абітурієнтів. Кожна пара (синя та помаранчева мапи) демонструє показники для однієї області (позначена жовтим контуром).</p>
+							      					<p>Мапи показують куди їхали вступники з міст (<span style="color: #ff7b1d;">сині мапи</span>) та сіл (<span style="color: #1da1ff;">помаранчеві мапи</span>) у відсоткових значеннях. Чим темніший колір області - тим більше туди поїхало абітурієнтів. Кожна пара (синя та помаранчева мапи) демонструє показники для однієї області (позначена жовтим контуром).</p>
 							      				</div>
 							      			</div>
 							      	</div>
@@ -306,8 +322,29 @@
 				</div>
 
 			<div class="box justify-content-center">
-				<img src="img/center.png">
+				<img src="img/center.png" class = 'full'>
 			</div>
+			
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/central_title.png" class="mobile">
+				    </div>	
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/center/vinnitza.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/center/cherkasi.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/center/poltavska.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/center/kirovograd.png" class="mobile">
+				    </div>
+				</div>
+			</div>
+
 
 			<div class="container-fluid">
 				<div class="row">
@@ -321,21 +358,109 @@
 			</div>
 
 			<div class="box justify-content-center">
-				<img src="img/north.png">
+				<img src="img/north.png" class = 'full'>
 			</div>
 
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-12 col-md-8 offset-md-2">
-						<div class="text">
-				    		<p>Найбільше вступників поїхало до Києва з <b>Чернігівської області: 43 % - з сіл та 45 % - з міст</b>. Це навіть більше за частку тих, хто залишився в рідній області.</p>
-				        </div>
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/north_title.png" class="mobile">
+				    </div>	
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/north/chernihiv.png" class="mobile">
+				    </div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+				    <div class="col-12 col-md-8 offset-md-2">
+				    	<div class="text">
+				    	    <p>Найбільше вступників поїхало до Києва з <b>Чернігівської області: 43 % - з сіл та 45 % - з міст</b>. Це навіть більше за частку тих, хто залишився в рідній області.</p>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/north/sumy.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/north/zhitomir.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/north/kyiv.png" class="mobile">
 				    </div>
 				</div>
 			</div>
 
 			<div class="box justify-content-center">
-				<img src="img/east_south.png">
+				<img src="img/east_south.png" class = 'full'>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south_title.png" class="mobile">
+				    </div>	
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/harkiv.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/donezk.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/luhansk.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/dnipro.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/zaporizha.png" class="mobile">
+				    </div>
+				</div>
+			</div>
+
+			 <div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-8 offset-md-2">
+						<div class="text">
+						    <p>Найбільша частка вступників залишились в <b>Запорізькій області</b>. В той же час різниця у виборі місця навчання абітурієнтами з сіл та міст помітна в межах області: останні переважно обирали виші в обласному центрі, а серед вступників з сіл популярним вибором були університети в Мелітополі та Бердянську.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/odesa.png" class="mobile">
+				    </div>
+				</div>
+			</div>
+
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-md-8 offset-md-2">
+				    	<div class="text">
+				            <p>Серед вступників з <b>Одеської області</b>, частка тих, хто поїхали до Києва є вищою серед випускників з сіл.</p>
+				        </div>
+				    </div>
+				</div>
+			</div>	
+
+			<div class="container-fluid">
+				<div class="row">			    
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/mikolaiv.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/east_south/herson.png" class="mobile">
+				    </div>
+				</div>
 			</div>
 
 			<div class="container-fluid">
@@ -343,16 +468,46 @@
 					<div class="col-12 col-md-8 offset-md-2">
 				    	<div class="text">
 				            <p>Найпопулярнішими напрямами для абітурієнтів з міст у <b>східних областях</b> очікувано виявились Харків та Київ. Вступники з сіл також обирали виші в Запорізькій та Дніпропетровській областях.</p>
-				            <p>Випускники міських шкіл у <b>південних областях</b>, переважно їхали до великих міст - Одеси, Харкова та Києва. Вступники з шкіл у сільській місцевості - до Запоріжжя та Дніпра.</p> 
-				            <p>Серед вступників з <b>Одеської області</b>, частка тих, хто поїхали до Києва є вищою серед випускників з сіл.</p>
-				            <p>Найбільша частка вступників залишились в <b>Запорізькій області</b>. В той же час різниця у виборі місця навчання абітурієнтами з сіл та міст помітна в межах області: останні переважно обирали виші в обласному центрі, а серед вступників з сіл популярним вибором були університети в Мелітополі та Бердянську.</p>
+				            <p>Випускники міських шкіл у <b>південних областях</b>, переважно їхали до великих міст - Одеси, Харкова та Києва. Вступники з шкіл у сільській місцевості - до Запоріжжя та Дніпра.</p>
 				        </div>
 				    </div>
 				</div>
 			</div>
 
 			<div class="box justify-content-center">
-				<img src="img/zahid.png">
+				<img src="img/zahid.png" class = 'full'>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid_title.png" class="mobile">
+				    </div>	
+					<div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/lviv.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/chernivzi.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/i_f.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/volin.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/ternopil.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/rivne.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/hmelnizk.png" class="mobile">
+				    </div>
+				    <div class="col-lg-3 col-md- 12 col-sm-12 col-xs-12">
+				        <img src="img/zahid/zak.png" class="mobile">
+				    </div>
+				</div>
 			</div>
 
 			<div class="container-fluid">
@@ -389,7 +544,7 @@
 			</div>
 
 			<div class="box justify-content-center">
-			    <img src="img/ranks.jpg" class = "smaller">
+			    <img src="img/ranks.jpg" class = 'ranks'>
 			</div> 
 
 			<div class="container-fluid">
@@ -763,6 +918,14 @@
             }
         );
         </script>
+
+        <!-- tooltips -->
+
+        <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        });
+    	</script>
 
             
     </body>

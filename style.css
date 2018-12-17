@@ -194,6 +194,7 @@ a.notelink {
 img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 img.smaller {
@@ -204,6 +205,17 @@ img.smaller {
 img.logo {
   width: 120%;
   height: 100%;
+}
+
+/*special images for mobile*/
+
+img.mobile {
+  display:none;
+}
+
+img.ranks {
+  width: 70%;
+  height: 70%;
 }
 
 .comment {
@@ -365,7 +377,7 @@ li> a {
 .support-site:visited {
   color: #FAA61A; }
 
- /* for small*/
+ /* for small and medium screens*/
 
 /*col behabiour (reduce margins)*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 300px) and (orientation: portrait) {
@@ -377,8 +389,21 @@ li> a {
 /*sm and md*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 300px) and (orientation: portrait) {
   img.smaller {
-    width: 90%;
-    height: 90%;
+    display: none;
+  }
+
+  img.full {
+    display:none;
+  }
+
+  img.mobile {
+    display:block;
+    padding-bottom: 5%;
+  }
+
+  img.ranks {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -440,7 +465,7 @@ li> a {
 
 /*sm for landscape*/
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 300px) and (orientation: landscape) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 768px) and (min-device-width: 300px) and (orientation: landscape) {
   .myh1 {
     font-size: 1.5em;
   }
@@ -567,3 +592,30 @@ li> a {
     font-size: 0.8em;
   }
 }
+
+
+
+
+/*tooltip style*/
+
+.btn { 
+  display:block;
+  font-size:12px;
+  font-weight:400;
+  text-align:left;
+  text-decoration:none;
+  background-color: none;
+  border: 1px solid transparent;
+}
+
+/*add for mob images*/
+
+/*.kirovograd {
+  height: 100%;
+  width: 135%;
+}
+
+.vinnitza {
+  height: 100%;
+  width: 140%;
+}*/
