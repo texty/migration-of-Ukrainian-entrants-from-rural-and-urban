@@ -290,16 +290,16 @@
 			    </div>
 			</div>
 
-			<!-- <div class="container-fluid">
+		<!-- 	<div class="container-fluid">
 				<div class="row">
 					<div class="col-12 col-md-8 offset-md-2">
 				    	<div class="text">
-				            <p>Погляньмо детальніше як обирали місце навчання абітурієнти з сіл та міст</p><button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="показники для Київської області наведені без урахування Києва">у кожній з областей</button>
+				            <p>Погляньмо детальніше як обирали місце навчання абітурієнти з сіл та міст<a class="btn" data-toggle="tooltip" data-placement="top" title="показники для Київської області наведені без урахування Києва">у кожній з областей*</a></p>
 				        </div>
 				    </div>
 			    </div>
-			</div> -->
-
+			</div>
+ -->
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12 col-md-8 offset-md-2">
@@ -311,7 +311,7 @@
 							      		</div>
 							      			<div id="collapse3" class="panel-collapse collapse">
 							      				<div class="text">
-							      					<p>Мапи показують куди їхали вступники з міст (<span style="color: #ff7b1d;">сині мапи</span>) та сіл (<span style="color: #1da1ff;">помаранчеві мапи</span>) у відсоткових значеннях. Чим темніший колір області - тим більше туди поїхало абітурієнтів. Кожна пара (синя та помаранчева мапи) демонструє показники для однієї області (позначена жовтим контуром).</p>
+							      					<p>Мапи показують куди їхали вступники з міст <span style="color: #1da1ff;">(сині мапи)</span> та сіл <span style="color: #ff7b1d;">(помаранчеві мапи)</span> у відсоткових значеннях. Чим темніший колір області - тим більше туди поїхало абітурієнтів. Кожна пара (синя та помаранчева мапи) демонструє показники для однієї області (позначена жовтим контуром).</p>
 							      				</div>
 							      			</div>
 							      	</div>
@@ -921,12 +921,34 @@
 
         <!-- tooltips -->
 
-        <script>
+        <!-- <script>
         $(function () {
           $('[data-toggle="tooltip"]').tooltip()
         });
-    	</script>
+    	</script> -->
 
-            
+    	<!-- <script>
+    	$(document).ready(function(){
+    	    $('[data-toggle="tooltip"]').tooltip(); 
+    	});
+    	</script> -->
+
+    	<!-- logo switch -->
+
+    	<!-- <script>
+    	function logoSwitch () {
+    	  $('.altLogo').each(function() {
+    	    $(this).css('top',
+    	      $('.logo').offset().top -  $(this).closest('.row').offset().top
+    	    );
+    	  });
+    	};
+
+    	$(document).scroll(function() {logoSwitch();});
+
+    	logoSwitch();
+    	</script>
+ -->
+
     </body>
 </html>
