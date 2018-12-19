@@ -205,50 +205,9 @@ img.gif {
   width: auto;
 }
 
-/*tooltip*/
-
-/*.btn {
-  font-size: 1rem;
-}
-
-.btn + .tooltip > .tooltip-inner {
-  background-color: #73AD21; 
-  color: #FFFFFF; 
-  border: 1px solid green; 
-  padding: 15px;
-  font-size: 20px;
+/*.tooltip {
+  min-width:700px;
 }*/
-
-/*.btn > .title {
-  font-size: 14px;
-}*/
-
-[btn] {
-  &:hover {
-    &:before, &:after {
-      display:block;
-      position:absolute;
-      font-size:0.8em;
-      color:white;
-    }
-    &:before {
-      border-radius:0.2em;
-      content:attr(title);
-      background-color:$alphablack;
-      margin-top:-2.5em;
-      padding:0.3em;
-    }
-    &:after {
-      content:'';
-      margin-top:-2.1em;
-      margin-left:1em;
-      border-style:solid;
-      border-color:transparent;
-      border-top-color:$alphablack;
-      border-width:0.5em 0.5em 0 0.5em;
-    }
-  }
-}
 
 
 /*special images for mobile*/
@@ -449,6 +408,10 @@ li> a {
     width: 100%;
     height: 100%;
   }
+
+  span.tp {
+    margin-left: 0.7%;
+  }
 }
 
 /*sm*/
@@ -625,9 +588,6 @@ li> a {
   }
 }
 
-
-
-
 /*tooltip style*/
 
 /*.btn { 
@@ -636,9 +596,31 @@ li> a {
   font-weight:400;
   text-align:left;
   text-decoration:none;
-  background-color: none;
-  border: 1px solid transparent;
+  border: 1px solid lightyellow ! important;
+  font-size: 1.3rem ! important;
+  background-color: lightyellow ! important;
+  color: #6E6E6E;
+  padding: .001rem 0.05rem ! important;
+  margin-bottom: 0.4%;
 }*/
 
+/*.tippy-tooltip.custom-theme {
+  background-color: white ! important;
+  border: 1px solid lightyellow;
+  color: black;
+} 
 
+.tippy-backdrop {
+  background-color: white ! important;
+}
+*/
+
+span.tp {
+  border: 1px solid lightyellow ! important;
+  background-color: lightyellow ! important;
+  color: #6E6E6E;
+  padding: .001rem 0.05rem ! important;
+  margin-bottom: 0.4%;
+  margin-left: 0.5%;
+}
 
