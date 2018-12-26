@@ -34,17 +34,17 @@ body {
 }
 
 #header  {
-    background-image: url(img/flowmap.png);
-    height: 100vh;
-    background-size: contain;
+    background-image: url(img/cover.jpg);
+    height: 54.5vw;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0 !important;
     background-position: center;
-    background-color: #111523;
+    background-color: white;
 }
 
 div.social-icons {
-    padding-top: 0.8em;
+    padding-top: 0.5em;
     height: 5em;
     position: fixed;
 }
@@ -57,7 +57,7 @@ div.socicon {
 }
 
 div.logo {
-  padding-top: 0.8em;
+  padding-top: 0;
 }
 
 .altLogo {
@@ -71,7 +71,7 @@ div.logo {
   text-align: center;
 }
 
-.center{
+.center {
     position: absolute;
     bottom: 0;
     top: 40%;
@@ -79,28 +79,35 @@ div.logo {
     margin-left: 20px;
 }
 
-.credits{
-    position: absolute;
+.credits {
     bottom: 0;
     top: 70%;
     text-align: center;
+}
+
+.credits > p {
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    margin-top: 10%;
 }
 
 .myh1 {
     caption-side: top;
     text-align: center;
     font-weight: 800;
-    font-size: 3em;
-    color: white;
+    font-size: 5em;
+    color: black;
     line-height: 140%;
 }
 
-.credits > p {
+.myh2 {
+    caption-side: top;
     text-align: center;
-    color: white;
-    font-size: 1em;
-    margin-top: 30%;
-    position: middle;
+    font-weight: 800;
+    font-size: 3em;
+    color: black;
+    line-height: 140%;
 }
 
 .intro {
@@ -117,16 +124,16 @@ div.logo {
 }
 
 .text {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .speech {
   margin-bottom: 2%;\
   margin-bottom: 5px;
-  color: #ff7b1d;
+  color: #f9bb2c;
   font-size: 1.2em;
   text-align: center;
 }
@@ -163,8 +170,8 @@ p {
 
 
 a.mylink {
-    color: #ff7b1d;
-    border-bottom: 0px;
+    color: #f9bb2c;
+    border-bottom: 1px dashed;
 }
 
 a.greylink {
@@ -205,10 +212,6 @@ img.gif {
   width: auto;
 }
 
-/*.tooltip {
-  min-width:700px;
-}*/
-
 
 /*special images for mobile*/
 
@@ -230,14 +233,14 @@ img.ranks {
 .my-comment1 {
     font-size: 0.8em;
     font-weight: 300;
-    color: #ff7b1d;
+    color: #f9bb2c;
     padding-top: 1%;
 }
 
 .my-comment2 {
     font-size: 0.8em;
     font-weight: 300;
-    color: #ff7b1d;
+    color: #f9bb2c;
     padding-top: 1%;
 }
 
@@ -286,7 +289,7 @@ th.caption {
 
 td.common {
     font-weight: 800;
-    color: #ff7b1d;
+    color: #f9bb2c;
     font-size: 1.5em; 
 }
 
@@ -299,7 +302,7 @@ td.common2 {
 
 td.highlight{
   color: #FFFFFF;
-  background-color: #ff7b1d;
+  background-color: #f9bb2c;
   font-size: 1.5em;
   font-weight: 800;
 }
@@ -415,7 +418,7 @@ li> a {
 }
 
 /*sm*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 300px) and (orientation: portrait) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 768px) and (min-device-width: 300px) and (orientation: portrait) {
   .text {
     margin-right: 1%;
     margin-left: 1%;
@@ -428,7 +431,8 @@ li> a {
   }
 
   .intro {
-    font-size: 85%;
+    font-size: 83%;
+    padding-top: 0;
   }
 
   img.gif {
@@ -437,7 +441,7 @@ li> a {
   }
 
   div.social-icons {
-    padding-top: 0.5em;
+    padding-top: 0.4em;
     height: 5em;
     position: fixed;
   }
@@ -447,10 +451,14 @@ li> a {
     margin-right: 0.5em;
   }
 
+  div.logo {
+    padding-top: 0.4em;
+    padding-left: 0;
+  }
+
   .credits{
-    position: absolute;
     bottom: 0;
-    top: 25%;
+    top: 30%;
     text-align: center;
     font-size: 0.8em;
   }
@@ -465,7 +473,13 @@ li> a {
   }
 
   .myh1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+  }
+
+  .myh2 {
+    font-size: 1em;
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
   }
@@ -486,14 +500,32 @@ li> a {
     font-size: 1em;
   }
 
-  div.socicon {
-    padding-top: 0.1em;
-    width: 1.8em;
+  #header {
+    background-image: url(img/cover.jpg);
+    height: 55vw;
+  }
+
+  .myh1 {
+    font-size: 2em;
+  }
+
+  .myh2 {
+    font-size: 1.5em;
   }
 
   img.gif {
-    height: 40px;
+    height: 30px;
     width: auto;
+  }
+
+  div.socicon {
+    padding-top: 0;
+    width: 1.2em;
+  }
+
+  div.logo {
+    padding-top: 0;
+    padding-left: 0;
   }
 }
 
@@ -510,7 +542,8 @@ li> a {
   }
 
   .intro {
-    font-size: 120%;
+    font-size: 1.33em ! important;
+    margin-top: 1%;
   }
 
   div.socicon {
@@ -520,19 +553,24 @@ li> a {
 
   }
 
+  div.logo {
+      padding-top: 0.9em;
+  }
+
   div.social-icons {
-    padding-top: 0.4em;
+    padding-top: 0.5em;
     height: 5em;
     position: fixed;
     padding-right: 40px;
   }
 
   #header {
-    height: 100vh;
+    height: 55vw;;
   }
 
   .center {
-    top: 65%;
+    position: initial;
+    padding-top: 20%;
   }
 
   .credits {
@@ -545,31 +583,91 @@ li> a {
     transform: translate(0%, -50%);
     -webkit-transform: translate(0%, -50%);
   }
+
+  .myh2 {
+    font-size: 2em;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    margin-top: 5%
+  }
+
+  img.gif {
+    height: 40px;
+    width: auto;
+  }
+
+  div.socicon {
+    width: 1.5em;
+  }
+}
+
+/*md landscape*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape) {
+  #header {
+    height: 75vh;
+    width: auto;
+  }
+
+  .center {
+    position: absolute; 
+    top: 35%;
+  }
+
+  .myh1 {
+    font-size: 4em;
+  }
+
+  .myh2 {
+    font-size: 2.5em;
+  }
+
+  img.gif {
+    height: 40px;
+    width: auto;
+  }
+
+  div.socicon {
+    width: 1.5em;
+  }
+
+  div.social-icons {
+    padding-top: 0;
+  }
+
+  div.logo {
+    padding-top: 0.3em;
+  }
 }
 
 /*extra sm*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 568px) and (min-device-width: 300px) and (orientation: portrait) {
-  .credits {
-    top: 28%;
-    font-size: 0.6em;
-  }
-
-  .center {
-    top: 25%;
-  }
-
-  .myh1 {
-    font-size: 1.1em;
-    transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%);
-  }
 
   div.socicon {
     width: 0.9em;
   }
 
+  div.social-icons {
+    padding-top: 0.3em;
+  }
+
+  #header {
+      height: 55vw;
+  }
+
+  div.logo {
+      padding-top: 0.5em;
+  }
+
+  .myh1 {
+    font-size: 1.3em;
+  }
+
+  .myh2 {
+    font-size: 1em;
+  }
+
   .intro {
-      font-size: 75%;
+    font-size: 80%;
   }
 }
 
@@ -590,33 +688,19 @@ li> a {
 
 /*tooltip style*/
 
-/*.btn { 
-  display:block;
-  font-size:12px;
-  font-weight:400;
-  text-align:left;
-  text-decoration:none;
-  border: 1px solid lightyellow ! important;
-  font-size: 1.3rem ! important;
-  background-color: lightyellow ! important;
-  color: #6E6E6E;
-  padding: .001rem 0.05rem ! important;
-  margin-bottom: 0.4%;
-}*/
-
-/*.tippy-tooltip.custom-theme {
+.tippy-tooltip.tp-theme {
   background-color: white ! important;
   border: 1px solid lightyellow;
-  color: black;
 } 
 
-.tippy-backdrop {
+.tippy-tooltip.tp-theme.tippy-backdrop {
   background-color: white ! important;
+  border: 1px solid lightyellow;
 }
-*/
+
 
 span.tp {
-  border: 1px solid lightyellow ! important;
+  border: 1px solid #f9bb2c ! important;
   background-color: lightyellow ! important;
   color: #6E6E6E;
   padding: .001rem 0.05rem ! important;
