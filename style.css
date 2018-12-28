@@ -239,7 +239,7 @@ img.ranks {
 
 .my-comment2 {
     font-size: 0.8em;
-    font-weight: 300;
+    font-weight: 500;
     color: #F7A852;
     padding-top: 1%;
 }
@@ -703,8 +703,6 @@ div.tippy-tooltip {
     box-sizing: border-box;
     font-size: 1rem;
     padding: 0.75em !important;
-    box-shadow: 0 0 0.5em 1px darken($bgcol, 10%);
-    opacity: 0.9;
     margin: 0 -5% 0 0;
     border: 1px solid #f9bb2c ! important;
   }
@@ -714,8 +712,6 @@ div.tippy-tooltip {
     box-sizing: border-box;
     font-size: 1rem;
     padding: 0.75em !important;
-    box-shadow: 0 0 0.5em 1px darken($bgcol, 10%);
-    opacity: 0.9;
     margin: 0 -5% 0 0;
     border: 1px solid #f9bb2c ! important;
   }
