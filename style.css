@@ -233,14 +233,14 @@ img.ranks {
 .my-comment1 {
     font-size: 0.8em;
     font-weight: 300;
-    color: #f9bb2c;
+    color: #F7A852;
     padding-top: 1%;
 }
 
 .my-comment2 {
     font-size: 0.8em;
     font-weight: 300;
-    color: #f9bb2c;
+    color: #F7A852;
     padding-top: 1%;
 }
 
@@ -688,17 +688,6 @@ li> a {
 
 /*tooltip style*/
 
-.tippy-tooltip.tp-theme {
-  background-color: white ! important;
-  border: 1px solid lightyellow;
-} 
-
-.tippy-tooltip.tp-theme.tippy-backdrop {
-  background-color: white ! important;
-  border: 1px solid lightyellow;
-}
-
-
 span.tp {
   border: 1px solid #f9bb2c ! important;
   background-color: lightyellow ! important;
@@ -707,4 +696,32 @@ span.tp {
   margin-bottom: 0.4%;
   margin-left: 0.5%;
 }
+
+div.tippy-tooltip {
+    background-color: white;
+    color: #5D646F;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.75em !important;
+    box-shadow: 0 0 0.5em 1px darken($bgcol, 10%);
+    opacity: 0.9;
+    margin: 0 -5% 0 0;
+    border: 1px solid #f9bb2c ! important;
+  }
+  .tippy-backdrop {
+    background-color: white;
+    color: #5D646F;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.75em !important;
+    box-shadow: 0 0 0.5em 1px darken($bgcol, 10%);
+    opacity: 0.9;
+    margin: 0 -5% 0 0;
+    border: 1px solid #f9bb2c ! important;
+  }
+
+
+
+
+
 
