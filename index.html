@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-    	<title>entrants</title>
-
         <!-- Libraries -->
 
         <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
@@ -50,7 +47,7 @@
 
 	            <div class="row" style="padding-left: 10px; padding-right: 20px;">
 	            	<!-- <div class="col-12">  -->  
-		                <div class="col-2 logo">
+		                <div class="col-2 logo" style="z-index: 100">
 		                         <a href="http://texty.org.ua/" target="_blank">
 		                            <img class='gif' src="img/logo_black.png"/>
 		                         </a>
@@ -688,15 +685,22 @@
             }
         </style>
 
-        <div id="button">
-            <h3>TEXTY.ORG.UA — незалежне видання без навʼязливої реклами й замовних матеріалів. Щоб працювати далі, нам потрібна ваша підтримка. </h3>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div id="button">
+                        <h3>TEXTY.ORG.UA — незалежне видання без навʼязливої реклами й замовних матеріалів. Щоб працювати далі, нам потрібна ваша підтримка. </h3>
 
-            <div id="button-container">
-                <!--liqpay link-->
-                <button id="support-us" onclick="location.href='https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiNTAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0J%2FQvtC20LXRgNGC0LLQsCIsInR5cGUiOiJkb25hdGUiLCJsYW5ndWFnZSI6InVrIn0%3D&signature=YFkd4Z74QCJXRxMTPoWm0JVlkX4%3D'" type="button">ПОЖЕРТВУВАТИ</button>
+                        <div id="button-container">
+                            <!--liqpay link-->
+                            <button id="support-us" onclick="location.href='https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiNTAiLCJjdXJyZW5jeSI6IlVBSCIsImRlc2NyaXB0aW9uIjoi0J%2FQvtC20LXRgNGC0LLQsCIsInR5cGUiOiJkb25hdGUiLCJsYW5ndWFnZSI6InVrIn0%3D&signature=YFkd4Z74QCJXRxMTPoWm0JVlkX4%3D'" type="button">ПОЖЕРТВУВАТИ</button>
+                        </div>
+                    </div>
+                </div>  
             </div>
-        </div>
-
+        </div> 
+        
 
         <!-- insert here zno article -->
         
@@ -893,6 +897,9 @@
             }
         );
         </script>
+
+
+    <script src="lib/share-behavior.js"></script>
 
     </body>
 </html>
